@@ -1,0 +1,23 @@
+{
+  "name": "telegram-userbot-gemini-dashboard",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "userbot.js",
+  "scripts": {
+    "start": "node userbot.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.6.8",
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "input": "^1.0.1",
+    "multer": "^1.4.5-lts.1",
+    "socket.io": "^4.8.1",
+    "sqlite": "^4.2.1",
+    "sqlite3": "^5.1.7",
+    "telegraf": "^4.12.0",
+    "telegram": "^2.26.22"
+  }
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dashboard Komplain</title>
+    <style>
+      body { font-family: Arial, Helvetica, sans-serif; padding: 16px; background:#f6f8fa; }
+      header { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+      .controls { margin:12px 0; display:flex; gap:8px; align-items:center; flex-wrap:wrap;}
+      input[type="date"], input[type="text"], select { padding:6px; border-radius:6px; border:1px solid #ccc; }
+      .card { background:#fff; padding:12px; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,0.06); margin-bottom:10px; }
+      .btn { padding:6px 10px; border-radius:6px; border:1px solid #bbb; background:#f2f2f2; cursor:pointer; }
+      .btn-danger { background:#ffecec; border-color:#ff9b9b; }
+      textarea { width:100%; min-height:70px; padding:8px; border-radius:6px; border:1px solid #ddd; }
+      .meta { color:#666; font-size:13px; margin-bottom:6px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Dashboard Komplain</h2>
+      <div>
+        <button id="refreshBtn" class="btn">Refresh</button>
+      </div>
+    </header>
+
+    <div class="controls">
+      <input id="q" type="text" placeholder="Cari teks..." />
+      <input id="start" type="date" />
+      <input id="end" type="date" />
+      <select id="status">
+        <option value="">Semua</option>
+        <option value="pending">Pending</option>
+        <option value="done">Selesai</option>
+      </select>
+      <button id="filterBtn" class="btn">Filter</button>
+    </div>
+
+    <div id="list"></div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
