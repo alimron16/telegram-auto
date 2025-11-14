@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Telegram Userbot Server (Express + Socket.IO + SQLite)
 
 This repository contains a minimal Express server with Socket.IO and SQLite for collecting "complaints" (messages). It also includes an optional Telegram bot integration using Telegraf to automatically record messages that match configured keywords.
@@ -46,3 +47,7 @@ Endpoints
 - DELETE `/api/complaints/:id` mark deleted
 
 If you want me to adapt the code to use a Telegram user client instead of a bot (original used a user client), tell me your preference and I can modify it.
+=======
+# telegramauto
+Project ini adalah sistem userbot Telegram yang otomatis mencatat komplain masuk ke database SQLite, lalu menampilkannya melalui dashboard web. Admin dapat memfilter komplain (tanggal, status, isi ≤500 karakter), membalas komplain langsung ke Telegram (dengan teks atau gambar), mengubah status menjadi selesai, serta menghapus komplain.
+>>>>>>> 8b9ff7c884b8b0682ad1594017edb0ec78e8c5b2
