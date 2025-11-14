@@ -25,7 +25,8 @@ npm install
 
 ```
 PORT=3000
-BOT_TOKEN=123456:ABC-DEF
+API_ID=
+API_HASH
 SQLITE_FILE=data.db
 ```
 
@@ -36,7 +37,7 @@ npm start
 ```
 
 Notes
-- If you don't set `BOT_TOKEN`, the server still runs but Telegram integration is skipped.
+- If you don't set `GEMINI_KEY`, the server still runs but Telegram integration is skipped.
 - The code uses `sqlite3` + `sqlite` for a Promise-friendly API.
 
 Endpoints
@@ -49,5 +50,5 @@ Endpoints
 If you want me to adapt the code to use a Telegram user client instead of a bot (original used a user client), tell me your preference and I can modify it.
 =======
 # telegramauto
-Project ini adalah sistem userbot Telegram yang otomatis mencatat komplain masuk ke database SQLite, lalu menampilkannya melalui dashboard web. Admin dapat memfilter komplain (tanggal, status, isi ≤500 karakter), membalas komplain langsung ke Telegram (dengan teks atau gambar), mengubah status menjadi selesai, serta menghapus komplain.
+Project ini adalah sistem userbot Telegram yang otomatis mencatat komplain masuk ke database SQLite, lalu menampilkannya melalui dashboard web. Admin dapat memfilter komplain (tanggal, status, isi ≤500 karakter), membalas komplain langsung ke Telegram (dengan teks atau gambar), mengubah status menjadi selesai, serta menghapus komplain. dan ini menggunakan akun telegram pribadi buka BOT/BOTFATHER untuk mendapatkan API_ID & API_HASH silahkan ambil di telegram API
 >>>>>>> 8b9ff7c884b8b0682ad1594017edb0ec78e8c5b2
