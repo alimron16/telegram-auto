@@ -10,7 +10,6 @@ Features
 
 Requirements
 - Node.js 16+
-- Optional: `BOT_TOKEN` (Telegram bot) if you want Telegram integration
 
 Quick setup
 
